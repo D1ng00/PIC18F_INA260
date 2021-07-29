@@ -1,9 +1,3 @@
-/* 
- * File:   Interrupts.h
- * Author: Bodnár Benjamin
- *
- * Created on 03 June 2020, 07:26
- */
 
 #ifndef INTERRUPTS_H
 #define	INTERRUPTS_H

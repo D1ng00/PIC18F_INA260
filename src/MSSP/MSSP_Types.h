@@ -1,9 +1,4 @@
-/* 
- * File:   MSSP_Types.h
- * Author: Bodnár Benjamin
- *
- * Created on 03 June 2020, 21:24
- */
+
 
 #ifndef MSSP_TYPES_H
 #define	MSSP_TYPES_H

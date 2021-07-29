@@ -1,9 +1,3 @@
-/* 
- * File:   TIMER0.h
- * Author: Bodnár Benjamin
- *
- * Created on 05 June 2020, 20:59
- */
 
 #ifndef TIMER0_H
 #define	TIMER0_H

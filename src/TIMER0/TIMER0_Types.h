@@ -1,9 +1,3 @@
-/* 
- * File:   TIMER0_Types.h
- * Author: Bodnár Benjamin
- *
- * Created on 05 June 2020, 20:59
- */
 
 #ifndef TIMER0_TYPES_H
 #define	TIMER0_TYPES_H

@@ -1,6 +1,5 @@
 #include "MSSP_Types.h"
 #include "MSSP.h"
-#include "Ports.h"
 #include "Interrupts.h"
 
 static dtSSPSTAT *const SSPSTAT = (dtSSPSTAT*)(0xFC7);
@@ -30,9 +29,7 @@ uint8 dd[10];
 
 void MSSP_Init(void)
 {   
-    //GpioDir(PINC3, 1);
-    //GpioDir(PINC4, 1);
-    
+
     SSPSTAT->Byte = 0x80;
     SSPCON1->Byte = 0x28;
     SSPCON2->Byte = 0;

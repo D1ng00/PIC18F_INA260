@@ -1,9 +1,4 @@
-/* 
- * File:   types.h
- * Author: Benjamin
- *
- * Created on 2019. március 11., 23:00
- */
+
 
 #ifndef TYPES_H
 #define	TYPES_H

@@ -1,9 +1,3 @@
-/* 
- * File:   Utilities.h
- * Author: Bodnár Benjamin
- *
- * Created on 05 July 2020, 12:47
- */
 
 #ifndef UTILITIES_H
 #define	UTILITIES_H

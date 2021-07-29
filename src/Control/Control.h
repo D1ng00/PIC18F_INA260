@@ -1,9 +1,3 @@
-/* 
- * File:   Control.h
- * Author: Bodnár Benjamin
- *
- * Created on 07 July 2020, 17:38
- */
 
 #ifndef CONTROL_H
 #define	CONTROL_H
