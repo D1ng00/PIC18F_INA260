@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\GeneralPurposePowerSupply_SW-master.production.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>65536</length>
+      <used>2389</used>
+      <free>63147</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>3649</length>
+      <used>235</used>
+      <free>3414</free>
+    </memory>
+  </executable>
+</project>
