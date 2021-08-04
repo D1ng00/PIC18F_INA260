@@ -2,27 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/Control/Control_Types.h</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/MSSP/MSSP.c</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/MSSP/MSSP.h</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/Control/Control.h</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/TIMER0/TIMER0.h</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/Utilities.c</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/TIMER0/TIMER0_Types.h</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/MSSP/MSSP_Types.h</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/TIMER0/TIMER0.c</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/types.h</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/Interrupts/Interrupts.h</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/Control/INA260_Driver/INA260_Driver.c</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/Interrupts/Interrupts_Types.h</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/Interrupts/Interrupts.c</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/Control/Control.c</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/Utilities.h</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/Control/INA260_Driver/INA260_Driver.h</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/main.c</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/Control/INA260_Driver/INA260_Driver_Types.h</file>
-            <file>file:/C:/Users/D1NG0/Desktop/Coisas/Escola/Projeto/GeneralPurposePowerSupply_ORIGINAL/GeneralPurposePowerSupply_SW-master/src/main.h</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

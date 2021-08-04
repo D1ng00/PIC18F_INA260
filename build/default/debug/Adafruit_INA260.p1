@@ -1,0 +1,51 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"133 ./Adafruit_INA260.h
+[; ;./Adafruit_INA260.h: 133:   INA260_MeasurementMode Adafruit_INA260_getMode;
+[c E2 0 3 7 .. ]
+[n E2 _mode INA260_MODE_SHUTDOWN INA260_MODE_TRIGGERED INA260_MODE_CONTINUOUS  ]
+"103 Adafruit_INA260.c
+[; ;Adafruit_INA260.c: 103:   I2C_Open(0x40);
+[c E433 0 1 2 .. ]
+[n E433 . I2C_NOERR I2C_BUSY I2C_FAIL  ]
+"122 ./mcc_generated_files/i2c_master.h
+[; ;./mcc_generated_files/i2c_master.h: 122: i2c_error_t I2C_Open(i2c_address_t address);
+[v _I2C_Open `(E433 ~T0 @X0 0 ef1`uc ]
+"104 Adafruit_INA260.c
+[; ;Adafruit_INA260.c: 104:   BUS_REGISTER(I2C_SEND_ADR_READ, 0x02, 2, 1);
+[c E444 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 .. ]
+[n E444 . I2C_IDLE I2C_SEND_ADR_READ I2C_SEND_ADR_WRITE I2C_TX I2C_RX I2C_RCEN I2C_TX_EMPTY I2C_SEND_RESTART_READ I2C_SEND_RESTART_WRITE I2C_SEND_RESTART I2C_SEND_STOP I2C_RX_ACK I2C_RX_NACK_STOP I2C_RX_NACK_RESTART I2C_RESET I2C_ADDRESS_NACK  ]
+"104 ./mcc_generated_files/i2c_master.h
+[; ;./mcc_generated_files/i2c_master.h: 104: void BUS_REGISTER(i2c_fsm_states_t i2cdevice, int reg_addr, int witdh, int byteorder);
+[v _BUS_REGISTER `(v ~T0 @X0 0 ef4`E444`i`i`i ]
+"144
+[; ;./mcc_generated_files/i2c_master.h: 144: i2c_error_t I2C_MasterOperation(_Bool read);
+[v _I2C_MasterOperation `(E433 ~T0 @X0 0 ef1`a ]
+"126 ./Adafruit_INA260.h
+[; ;./Adafruit_INA260.h: 126: int i2c_address = 0x40;
+[v _i2c_address `i ~T0 @X0 1 e ]
+[i _i2c_address
+-> 64 `i
+]
+"133
+[; ;./Adafruit_INA260.h: 133:   INA260_MeasurementMode Adafruit_INA260_getMode;
+[v _Adafruit_INA260_getMode `E2 ~T0 @X0 1 e ]
+"102 Adafruit_INA260.c
+[; ;Adafruit_INA260.c: 102: float Adafruit_INA260_readBusVoltage(void) {
+[v _Adafruit_INA260_readBusVoltage `(f ~T0 @X0 1 ef ]
+{
+[e :U _Adafruit_INA260_readBusVoltage ]
+[f ]
+"103
+[; ;Adafruit_INA260.c: 103:   I2C_Open(0x40);
+[e ( _I2C_Open (1 -> -> 64 `i `uc ]
+"104
+[; ;Adafruit_INA260.c: 104:   BUS_REGISTER(I2C_SEND_ADR_READ, 0x02, 2, 1);
+[e ( _BUS_REGISTER (4 , , , . `E444 1 -> 2 `i -> 2 `i -> 1 `i ]
+"105
+[; ;Adafruit_INA260.c: 105:   return I2C_MasterOperation(1) * 1.25;
+[e ) -> * -> -> ( _I2C_MasterOperation (1 -> -> 1 `i `a `ui `d .1.25 `f ]
+[e $UE 3  ]
+"106
+[; ;Adafruit_INA260.c: 106: }
+[e :UE 3 ]
+}
