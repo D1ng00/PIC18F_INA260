@@ -7,15 +7,22 @@
       <logicalFolder name="MCC Generated Files"
                      displayName="MCC Generated Files"
                      projectFiles="true">
+        <logicalFolder name="drivers" displayName="drivers" projectFiles="true">
+          <itemPath>mcc_generated_files/drivers/i2c_simple_master.h</itemPath>
+        </logicalFolder>
         <logicalFolder name="examples" displayName="examples" projectFiles="true">
           <itemPath>mcc_generated_files/examples/i2c_master_example.h</itemPath>
+          <itemPath>mcc_generated_files/examples/i2c_simple_example.h</itemPath>
         </logicalFolder>
-        <itemPath>mcc_generated_files/device_config.h</itemPath>
-        <itemPath>mcc_generated_files/pin_manager.h</itemPath>
+        <itemPath>mcc_generated_files/interrupt_manager.h</itemPath>
         <itemPath>mcc_generated_files/mcc.h</itemPath>
         <itemPath>mcc_generated_files/i2c_master.h</itemPath>
+        <itemPath>mcc_generated_files/device_config.h</itemPath>
+        <itemPath>mcc_generated_files/pin_manager.h</itemPath>
       </logicalFolder>
-      <itemPath>Adafruit_INA260.h</itemPath>
+      <itemPath>INA260.h</itemPath>
+      <itemPath>OLED.h</itemPath>
+      <itemPath>font.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -27,25 +34,35 @@
       <logicalFolder name="MCC Generated Files"
                      displayName="MCC Generated Files"
                      projectFiles="true">
+        <logicalFolder name="docs" displayName="docs" projectFiles="true">
+          <itemPath>mcc_generated_files/docs/i2c_simple.dox</itemPath>
+        </logicalFolder>
+        <logicalFolder name="drivers" displayName="drivers" projectFiles="true">
+          <itemPath>mcc_generated_files/drivers/i2c_simple_master.c</itemPath>
+        </logicalFolder>
         <logicalFolder name="examples" displayName="examples" projectFiles="true">
           <itemPath>mcc_generated_files/examples/i2c_master_example.c</itemPath>
+          <itemPath>mcc_generated_files/examples/i2c_simple_example.c</itemPath>
         </logicalFolder>
+        <itemPath>mcc_generated_files/interrupt_manager.c</itemPath>
         <itemPath>mcc_generated_files/pin_manager.c</itemPath>
+        <itemPath>mcc_generated_files/device_config.c</itemPath>
         <itemPath>mcc_generated_files/mcc.c</itemPath>
         <itemPath>mcc_generated_files/i2c_master.c</itemPath>
-        <itemPath>mcc_generated_files/device_config.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
-      <itemPath>Adafruit_INA260.c</itemPath>
+      <itemPath>INA260.c</itemPath>
+      <itemPath>OLED.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
-      <itemPath>INA260.mc3</itemPath>
+      <itemPath>INA260_maisum.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
+    <Elem>../../Downloads</Elem>
     <Elem>.</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
@@ -58,7 +75,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pk4hybrid</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.32</languageToolchainVersion>
+        <languageToolchainVersion>2.31</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -182,8 +199,7 @@
         <property key="ToolFirmwareToolPack"
                   value="Press to select which tool pack to use"/>
         <property key="communication.activationmode" value="nohv"/>
-        <property key="communication.interface"
-                  value="${communication.interface.default}"/>
+        <property key="communication.interface" value=""/>
         <property key="communication.interface.jtag" value="2wire"/>
         <property key="communication.speed" value="${communication.speed.default}"/>
         <property key="debugoptions.simultaneous.debug" value="false"/>
@@ -204,7 +220,7 @@
         <property key="memories.programmemory.ranges" value="0-ffff"/>
         <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoImageName" value="INA260_ptg"/>
+        <property key="programmerToGoImageName" value="INA260_maisum_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.ledbrightness" value="5"/>
@@ -263,8 +279,7 @@
         <property key="ToolFirmwareToolPack"
                   value="Press to select which tool pack to use"/>
         <property key="communication.activationmode" value="nohv"/>
-        <property key="communication.interface"
-                  value="${communication.interface.default}"/>
+        <property key="communication.interface" value=""/>
         <property key="communication.interface.jtag" value="2wire"/>
         <property key="communication.speed" value="${communication.speed.default}"/>
         <property key="debugoptions.simultaneous.debug" value="false"/>
@@ -286,8 +301,8 @@
         <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
         <property key="programmerToGoFilePath"
-                  value="C:/Users/D1NG0/MPLABXProjects/INA260.X/debug/default/INA260_ptg"/>
-        <property key="programmerToGoImageName" value="INA260_ptg"/>
+                  value="C:/Users/D1NG0/MPLABXProjects/INA260_maisum.X/debug/default/INA260_maisum_ptg"/>
+        <property key="programmerToGoImageName" value="INA260_maisum_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.ledbrightness" value="5"/>

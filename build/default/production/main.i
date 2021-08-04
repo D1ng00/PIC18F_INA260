@@ -7,9 +7,7 @@
 # 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-# 44 "main.c"
-# 1 "./mcc_generated_files/mcc.h" 1
-# 49 "./mcc_generated_files/mcc.h"
+# 43 "main.c"
 # 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -18,35 +16,35 @@ extern double __fpnormalize(double);
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\xc8debug.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\xc8debug.h" 1 3
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 1 3
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
 
 
 
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\features.h" 1 3
-# 10 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
-# 21 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 18 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\features.h" 1 3
+# 10 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
+# 21 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 18 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long int wchar_t;
-# 122 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 122 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned size_t;
-# 168 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 168 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef __int24 int24_t;
-# 204 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 204 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef __uint24 uint24_t;
-# 21 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
+# 21 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
 
 
 int atoi (const char *);
@@ -99,7 +97,7 @@ uldiv_t uldiv (unsigned long, unsigned long);
 
 
 size_t __ctype_get_mb_cur_max(void);
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\xc8debug.h" 2 3
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\xc8debug.h" 2 3
 
 
 
@@ -20038,8 +20036,10 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 2 3
-# 49 "./mcc_generated_files/mcc.h" 2
+# 43 "main.c" 2
 
+# 1 "./mcc_generated_files/mcc.h" 1
+# 50 "./mcc_generated_files/mcc.h"
 # 1 "./mcc_generated_files/device_config.h" 1
 # 50 "./mcc_generated_files/mcc.h" 2
 
@@ -20050,21 +20050,21 @@ void PIN_MANAGER_Initialize (void);
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 1 3
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 127 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 1 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 127 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long uintptr_t;
-# 142 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 142 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long intptr_t;
-# 158 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 158 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef signed char int8_t;
 
 
 
 
 typedef short int16_t;
-# 173 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 173 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long int32_t;
 
 
@@ -20072,7 +20072,7 @@ typedef long int32_t;
 
 
 typedef long long int64_t;
-# 188 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 188 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long long intmax_t;
 
 
@@ -20085,7 +20085,7 @@ typedef unsigned char uint8_t;
 
 
 typedef unsigned short uint16_t;
-# 209 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 209 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long uint32_t;
 
 
@@ -20093,9 +20093,9 @@ typedef unsigned long uint32_t;
 
 
 typedef unsigned long long uint64_t;
-# 229 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 229 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long long uintmax_t;
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 2 3
 
 
 typedef int8_t int_fast8_t;
@@ -20128,19 +20128,19 @@ typedef uint24_t uint_fast24_t;
 typedef uint32_t uint_least32_t;
 
 typedef uint64_t uint_least64_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/stdint.h" 1 3
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/stdint.h" 1 3
 typedef int16_t int_fast16_t;
 typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 2 3
 # 52 "./mcc_generated_files/mcc.h" 2
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdbool.h" 1 3
 # 53 "./mcc_generated_files/mcc.h" 2
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 1 3
 
 
 
@@ -20148,13 +20148,13 @@ typedef uint32_t uint_fast32_t;
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\errno.h" 1 3
-# 12 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\errno.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\errno.h" 1 3
+# 12 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\errno.h" 3
 extern int errno;
-# 8 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 2 3
+# 8 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 2 3
 
 # 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\__null.h" 1 3
-# 9 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 2 3
+# 9 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 2 3
 
 
 
@@ -20173,11 +20173,16 @@ extern char * cgets(char *);
 extern void cputs(const char *);
 # 54 "./mcc_generated_files/mcc.h" 2
 
+# 1 "./mcc_generated_files/interrupt_manager.h" 1
+# 110 "./mcc_generated_files/interrupt_manager.h"
+void INTERRUPT_Initialize (void);
+# 55 "./mcc_generated_files/mcc.h" 2
+
 # 1 "./mcc_generated_files/i2c_master.h" 1
 # 54 "./mcc_generated_files/i2c_master.h"
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 1 3
-# 24 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 1 3
+# 24 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
 
 
 
@@ -20189,14 +20194,14 @@ typedef void * va_list[1];
 
 
 typedef void * __isoc_va_list[1];
-# 137 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 137 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long ssize_t;
-# 246 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 246 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long long off_t;
-# 399 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 399 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef struct _IO_FILE FILE;
-# 24 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 2 3
-# 52 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 3
+# 24 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 2 3
+# 52 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 3
 typedef union _G_fpos64_t {
  char __opaque[16];
  double __align;
@@ -20328,32 +20333,12 @@ typedef enum {
 
 typedef enum
 {
+    I2C_STOP_O,
     I2C_RESTART_READ,
     I2C_RESTART_WRITE,
     I2C_CONTINUE,
     I2C_RESET_LINK
 } i2c_operations_t;
-
-typedef enum {
-    I2C_IDLE = 0,
-    I2C_SEND_ADR_READ,
-    I2C_SEND_ADR_WRITE,
-    I2C_TX,
-    I2C_RX,
-    I2C_RCEN,
-    I2C_TX_EMPTY,
-    I2C_SEND_RESTART_READ,
-    I2C_SEND_RESTART_WRITE,
-    I2C_SEND_RESTART,
-    I2C_SEND_STOP,
-    I2C_RX_ACK,
-    I2C_RX_NACK_STOP,
-    I2C_RX_NACK_RESTART,
-    I2C_RESET,
-    I2C_ADDRESS_NACK,
-
-} i2c_fsm_states_t;
-
 
 typedef uint8_t i2c_address_t;
 typedef i2c_operations_t (*i2c_callback_t)(void *funPtr);
@@ -20364,18 +20349,17 @@ i2c_operations_t I2C_CallbackReturnReset(void *funPtr);
 i2c_operations_t I2C_CallbackRestartWrite(void *funPtr);
 i2c_operations_t I2C_CallbackRestartRead(void *funPtr);
 
-void BUS_REGISTER(i2c_fsm_states_t i2cdevice, int reg_addr, int witdh, int byteorder);
 
 
 
 
 
 void I2C_Initialize(void);
-# 122 "./mcc_generated_files/i2c_master.h"
+# 101 "./mcc_generated_files/i2c_master.h"
 i2c_error_t I2C_Open(i2c_address_t address);
-# 132 "./mcc_generated_files/i2c_master.h"
+# 111 "./mcc_generated_files/i2c_master.h"
 i2c_error_t I2C_Close(void);
-# 144 "./mcc_generated_files/i2c_master.h"
+# 123 "./mcc_generated_files/i2c_master.h"
 i2c_error_t I2C_MasterOperation(_Bool read);
 
 
@@ -20387,169 +20371,83 @@ i2c_error_t I2C_MasterWrite(void);
 
 
 i2c_error_t I2C_MasterRead(void);
-# 163 "./mcc_generated_files/i2c_master.h"
+# 142 "./mcc_generated_files/i2c_master.h"
 void I2C_SetTimeout(uint8_t timeOut);
-# 173 "./mcc_generated_files/i2c_master.h"
+# 152 "./mcc_generated_files/i2c_master.h"
 void I2C_SetBuffer(void *buffer, size_t bufferSize);
-# 185 "./mcc_generated_files/i2c_master.h"
+# 164 "./mcc_generated_files/i2c_master.h"
 void I2C_SetDataCompleteCallback(i2c_callback_t cb, void *ptr);
-# 195 "./mcc_generated_files/i2c_master.h"
+# 174 "./mcc_generated_files/i2c_master.h"
 void I2C_SetWriteCollisionCallback(i2c_callback_t cb, void *ptr);
-# 205 "./mcc_generated_files/i2c_master.h"
+# 184 "./mcc_generated_files/i2c_master.h"
 void I2C_SetAddressNackCallback(i2c_callback_t cb, void *ptr);
-# 215 "./mcc_generated_files/i2c_master.h"
+# 194 "./mcc_generated_files/i2c_master.h"
 void I2C_SetDataNackCallback(i2c_callback_t cb, void *ptr);
-# 225 "./mcc_generated_files/i2c_master.h"
+# 204 "./mcc_generated_files/i2c_master.h"
 void I2C_SetTimeoutCallback(i2c_callback_t cb, void *ptr);
-# 55 "./mcc_generated_files/mcc.h" 2
-# 70 "./mcc_generated_files/mcc.h"
+# 213 "./mcc_generated_files/i2c_master.h"
+void (*MSSP_InterruptHandler)(void);
+# 222 "./mcc_generated_files/i2c_master.h"
+void I2C_SetInterruptHandler(void (* InterruptHandler)(void));
+# 56 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/drivers/i2c_simple_master.h" 1
+# 37 "./mcc_generated_files/drivers/i2c_simple_master.h"
+uint8_t i2c_read1ByteRegister(i2c_address_t address, uint8_t reg);
+uint16_t i2c_read2ByteRegister(i2c_address_t address, uint8_t reg);
+void i2c_write1ByteRegister(i2c_address_t address, uint8_t reg, uint8_t data);
+void i2c_write2ByteRegister(i2c_address_t address, uint8_t reg, uint16_t data);
+
+void i2c_writeNBytes(i2c_address_t address, void* data, size_t len);
+void i2c_readDataBlock(i2c_address_t address, uint8_t reg, void *data, size_t len);
+void i2c_readNBytes(i2c_address_t address, void *data, size_t len);
+# 57 "./mcc_generated_files/mcc.h" 2
+# 72 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 83 "./mcc_generated_files/mcc.h"
+# 85 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
 # 44 "main.c" 2
 
-# 1 "./Adafruit_INA260.h" 1
-# 40 "./Adafruit_INA260.h"
-typedef enum _mode {
-  INA260_MODE_SHUTDOWN = 0x00,
+# 1 "./INA260.h" 1
+# 37 "./INA260.h"
+float Voltage_ReadRegister(void);
+float Current_ReadRegister(void);
+float Power_ReadRegister(void);
 
-
-  INA260_MODE_TRIGGERED = 0x03,
-
-
-  INA260_MODE_CONTINUOUS = 0x07,
-
-
-} INA260_MeasurementMode;
-
-
-
-
-
-
-typedef enum _conversion_time {
-  INA260_TIME_140_us,
-  INA260_TIME_204_us,
-  INA260_TIME_332_us,
-  INA260_TIME_558_us,
-  INA260_TIME_1_1_ms,
-  INA260_TIME_2_116_ms,
-  INA260_TIME_4_156_ms,
-  INA260_TIME_8_244_ms,
-} INA260_ConversionTime;
-
-
-
-
-
-
-typedef enum _count {
-  INA260_COUNT_1,
-  INA260_COUNT_4,
-  INA260_COUNT_16,
-  INA260_COUNT_64,
-  INA260_COUNT_128,
-  INA260_COUNT_256,
-  INA260_COUNT_512,
-  INA260_COUNT_1024,
-} INA260_AveragingCount;
-
-
-
-
-
-
-typedef enum _alert_type {
-  INA260_ALERT_CONVERSION_READY = 0x1,
-  INA260_ALERT_OVERPOWER = 0x2,
-  INA260_ALERT_UNDERVOLTAGE = 0x4,
-  INA260_ALERT_OVERVOLTAGE = 0x8,
-  INA260_ALERT_UNDERCURRENT = 0x10,
-  INA260_ALERT_OVERCURRENT = 0x20,
-  INA260_ALERT_NONE = 0x0,
-} INA260_AlertType;
-
-
-
-
-
-
-typedef enum _alert_polarity {
-  INA260_ALERT_POLARITY_NORMAL = 0x0,
-  INA260_ALERT_POLARITY_INVERTED = 0x1,
-} INA260_AlertPolarity;
-
-
-
-
-
-
-typedef enum _alert_latch {
-  INA260_ALERT_LATCH_ENABLED = 0x1,
-
-  INA260_ALERT_LATCH_TRANSPARENT = 0x0,
-
-} INA260_AlertLatch;
-
-
-
-
-
-
-int i2c_address = 0x40;
-
-  void Adafruit_INA260_reset(void);
-  float Adafruit_INA260_readCurrent(void);
-  float Adafruit_INA260_readBusVoltage(void);
-  float Adafruit_INA260_readPower(void);
-  void Adafruit_INA260_setMode(INA260_MeasurementMode new_mode);
-  INA260_MeasurementMode Adafruit_INA260_getMode;
-
-  int Adafruit_INA260_conversionReady(void);
-  int alertFunctionFlag(void);
-
-  typedef enum
-{
-    I2C_Write,
-    I2C_Read,
-    Spi,
-} dtMSSPTYPE;
-
-typedef enum
-{
-    WriteSlaveAddress,
-            SendAddress,
-            SendData,
-            Restart,
-            SendRxSlaveAdd,
-            SetReceiveMode,
-            ReadData,
-            SendStop,
-            Fnished,
-
-} dtMSSPState;
-# 167 "./Adafruit_INA260.h"
-  INA260_ConversionTime Adafruit_INA260_getCurrentConversionTime(void);
-  void Adafruit_INA260_setCurrentConversionTime(INA260_ConversionTime time);
-  INA260_ConversionTime Adafruit_INA260_getVoltageConversionTime(void);
-  void Adafruit_INA260_setVoltageConversionTime(INA260_ConversionTime time);
-  void Adafruit_INA260_setAveragingCount(INA260_AveragingCount count);
-  void Adafruit_INA260_setAveragingCount(INA260_AveragingCount count);
+void I2C_Master_Start(void);
+void I2C_Master_Init(const unsigned long c);
+unsigned short I2C_Master_Read(unsigned short a);
+void I2C_Master_Write(unsigned d);
+void I2C_Master_Stop(void);
+void I2C_Master_RepeatedStart(void);
+int RoundRawToDec(int value);
 # 45 "main.c" 2
 
 
 
 
 
+char voltage_str[4];
+char current_str[4];
+char power_str[4];
+float Voltage;
+float Current;
+float Power;
+# 66 "main.c"
 void main(void)
 {
 
     SYSTEM_Initialize();
-# 71 "main.c"
+    I2C_Master_Init(1000000);
+# 87 "main.c"
     while (1)
-    {
-        float voltage = Adafruit_INA260_readBusVoltage();
-
+    {;
+       Voltage = Voltage_ReadRegister();
+       Current = Current_ReadRegister();
+       Power = Power_ReadRegister();
+       sprintf(voltage_str, "%.3f",Voltage);
+       sprintf(current_str, "%.2f",Current);
+       sprintf(power_str, "%.2f",Power);
 
     }
 }

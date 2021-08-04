@@ -47,14 +47,26 @@
 #include "i2c_master.h"
 #include <xc.h>
 
-
-static int _i2cdevice;
-static int _address;
-static int _width;
-static int _byteorder;
-static int _addresswidth;
-
 // I2C STATES
+typedef enum {
+    I2C_IDLE = 0,
+    I2C_SEND_ADR_READ,
+    I2C_SEND_ADR_WRITE,
+    I2C_TX,
+    I2C_RX,
+    I2C_RCEN,
+    I2C_TX_EMPTY,      
+    I2C_SEND_RESTART_READ,
+    I2C_SEND_RESTART_WRITE,
+    I2C_SEND_RESTART,
+    I2C_SEND_STOP,
+    I2C_RX_ACK,
+    I2C_RX_NACK_STOP,
+    I2C_RX_NACK_RESTART,
+    I2C_RESET,
+    I2C_ADDRESS_NACK,
+
+} i2c_fsm_states_t;
 
 // I2C Event callBack List
 typedef enum {
@@ -86,7 +98,7 @@ typedef struct
 } i2c_status_t;
 
 static void I2C_SetCallback(i2c_callbackIndex_t idx, i2c_callback_t cb, void *ptr);
-static void I2C_Poller(void);
+static void I2C_MasterIsr(void);
 static inline void I2C_MasterFsm(void);
 
 /* I2C interfaces */
@@ -154,7 +166,7 @@ i2c_status_t I2C_Status = {0};
 
 void I2C_Initialize()
 {
-    SSPSTAT = 0x00;
+    SSPSTAT = 0x80;
     SSPCON1 = 0x08;
     SSPCON2 = 0x00;
     SSPADD  = 0x13;
@@ -187,8 +199,10 @@ i2c_error_t I2C_Open(i2c_address_t address)
         I2C_Status.callbackTable[I2C_TIMEOUT]=I2C_CallbackReturnReset;
         I2C_Status.callbackPayload[I2C_TIMEOUT] = NULL;
         
+        I2C_SetInterruptHandler(I2C_MasterIsr);
         I2C_MasterClearIrq();
         I2C_MasterOpen();
+        I2C_MasterEnableIrq();
         returnValue = I2C_NOERR;
     }
     return returnValue;
@@ -226,7 +240,6 @@ i2c_error_t I2C_MasterOperation(bool read)
             I2C_Status.state = I2C_SEND_ADR_WRITE;
         }
         I2C_MasterStart();
-        I2C_Poller();
     }
     return returnValue;
 }
@@ -283,6 +296,11 @@ void I2C_SetTimeoutCallback(i2c_callback_t cb, void *ptr)
     I2C_SetCallback(I2C_TIMEOUT, cb, ptr);
 }
 
+void I2C_SetInterruptHandler(void (* InterruptHandler)(void))
+{
+    MSSP_InterruptHandler = InterruptHandler;
+}
+
 static void I2C_SetCallback(i2c_callbackIndex_t idx, i2c_callback_t cb, void *ptr)
 {
     if(cb)
@@ -297,13 +315,9 @@ static void I2C_SetCallback(i2c_callbackIndex_t idx, i2c_callback_t cb, void *pt
     }
 }
 
-static void I2C_Poller(void)
+static void I2C_MasterIsr()
 {
-    while(I2C_Status.busy)
-    {
-        I2C_MasterWaitForEvent();
-        I2C_MasterFsm();
-    }
+    I2C_MasterFsm();
 }
 
 static inline void I2C_MasterFsm(void)
@@ -350,6 +364,8 @@ static i2c_fsm_states_t I2C_DO_TX(void)
             case I2C_RESTART_WRITE:
                   return I2C_DO_SEND_RESTART_WRITE();
             default:
+            case I2C_CONTINUE:
+            case I2C_STOP_O:
                 return I2C_DO_SEND_STOP();
         }
     }
@@ -378,6 +394,8 @@ static i2c_fsm_states_t I2C_DO_RX(void)
             case I2C_RESTART_READ:
                 return I2C_DO_RX_NACK_RESTART();
             default:
+            case I2C_CONTINUE:
+            case I2C_STOP_O:
                 return I2C_DO_RX_NACK_STOP();
         }
     }
@@ -401,6 +419,9 @@ static i2c_fsm_states_t I2C_DO_TX_EMPTY(void)
         case I2C_CONTINUE:
             I2C_MasterSetIrq();
             return I2C_TX;
+        default:
+        case I2C_STOP_O:
+            return I2C_DO_SEND_STOP();
     }
 }
 
@@ -416,8 +437,14 @@ static i2c_fsm_states_t I2C_DO_RX_EMPTY(void)
             I2C_MasterEnableRestart();
             return I2C_SEND_RESTART_READ;
         case I2C_CONTINUE:
-            // Avoid the counter stop condition , Counter is incremented by 1
             return I2C_RX;
+        default:
+        case I2C_STOP_O:
+            if(I2C_Status.state != I2C_SEND_RESTART_READ)
+            {
+                I2C_MasterDisableRestart();
+            }
+            return I2C_RESET;
     }
 }
 
@@ -493,7 +520,7 @@ void I2C_BusCollisionIsr(void)
 
 i2c_operations_t I2C_CallbackReturnStop(void *funPtr)
 {
-    return I2C_STOP;
+    return I2C_STOP_O;
 }
 
 i2c_operations_t I2C_CallbackReturnReset(void *funPtr)
@@ -518,7 +545,7 @@ static inline bool I2C_MasterOpen(void)
 {
     if(!SSPCON1bits.SSPEN)
     {
-        SSPSTAT = 0x00;
+        SSPSTAT = 0x80;
         SSPCON1 = 0x08;
         SSPCON2 = 0x00;
         SSPADD = 0x13;
@@ -591,6 +618,7 @@ static inline void I2C_MasterClearBusCollision(void)
     PIR2bits.BCLIF = 0;
 }
 
+
 static inline bool I2C_MasterIsRxBufFull(void)
 {
     return SSPSTATbits.BF;
@@ -632,10 +660,3 @@ static inline void I2C_MasterWaitForEvent(void)
     }
 }
 
-void BUS_REGISTER(i2c_fsm_states_t i2cdevice, int reg_addr, int witdh, int byteorder)
-{
-    _i2cdevice = i2cdevice;
-    _address = reg_addr;
-    _width = witdh;
-    _byteorder = byteorder;
-}

@@ -65,32 +65,12 @@ typedef enum {
 
 typedef enum
 {
+    I2C_STOP_O,
     I2C_RESTART_READ,
     I2C_RESTART_WRITE,
     I2C_CONTINUE,
     I2C_RESET_LINK
 } i2c_operations_t;
-
-typedef enum {
-    I2C_IDLE = 0,
-    I2C_SEND_ADR_READ,
-    I2C_SEND_ADR_WRITE,
-    I2C_TX,
-    I2C_RX,
-    I2C_RCEN,
-    I2C_TX_EMPTY,      
-    I2C_SEND_RESTART_READ,
-    I2C_SEND_RESTART_WRITE,
-    I2C_SEND_RESTART,
-    I2C_SEND_STOP,
-    I2C_RX_ACK,
-    I2C_RX_NACK_STOP,
-    I2C_RX_NACK_RESTART,
-    I2C_RESET,
-    I2C_ADDRESS_NACK,
-
-} i2c_fsm_states_t;
-
 
 typedef uint8_t i2c_address_t;
 typedef i2c_operations_t (*i2c_callback_t)(void *funPtr);
@@ -101,7 +81,6 @@ i2c_operations_t I2C_CallbackReturnReset(void *funPtr);
 i2c_operations_t I2C_CallbackRestartWrite(void *funPtr);
 i2c_operations_t I2C_CallbackRestartRead(void *funPtr);
 
-void BUS_REGISTER(i2c_fsm_states_t i2cdevice, int reg_addr, int witdh, int byteorder);
 /**
  * \brief Initialize I2C interface
  *
@@ -223,5 +202,23 @@ void I2C_SetDataNackCallback(i2c_callback_t cb, void *ptr);
  * \return Nothing
  */
 void I2C_SetTimeoutCallback(i2c_callback_t cb, void *ptr);
+
+/**
+ * \brief I2C Interrupt Handler
+ *        This is a pointer to the function that will be called upon I2C interrupt
+ * \param[in] None
+ *
+ * \return Nothing
+ */
+void (*MSSP_InterruptHandler)(void);
+
+/**
+ * \brief Set I2C Interrupt Handler
+ * This API sets the function to be called upon I2C interrupt
+ * \param[in] None
+ *
+ * \return Nothing
+ */
+void I2C_SetInterruptHandler(void (* InterruptHandler)(void));
 
 #endif //I2C_MASTER_H

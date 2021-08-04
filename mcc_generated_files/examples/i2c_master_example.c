@@ -114,7 +114,7 @@ void I2C_WriteNBytes(i2c_address_t address, uint8_t* data, size_t len)
     I2C_SetBuffer(data,len);
     I2C_SetAddressNackCallback(NULL,NULL); //NACK polling?
     I2C_MasterWrite();
-    while(I2C_BUSY == I2C_Close()); // sit here until finished.
+    //while(I2C_BUSY == I2C_Close()); // sit here until finished.
 }
 
 void I2C_ReadNBytes(i2c_address_t address, uint8_t *data, size_t len)

@@ -40,10 +40,26 @@
     OF FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS 
     SOFTWARE.
 */
-
+#include <xc.h>
 #include "mcc_generated_files/mcc.h"
-#include "Adafruit_INA260.h"
+#include "INA260.h"
+#include <stdio.h> /* for sprintf */
 
+#define _XTAL_FREQ 8000000
+
+char voltage_str[4];
+char current_str[4];
+char power_str[4];
+float Voltage;
+float Current;
+float Power;
+ 
+#define INA260_ADDRESS  0x40
+#define INA260_REG_BUSVOLTAGE 0x02
+#define INA260_REG_POWER  0x03
+#define INA_RESET_DEVICE 0x8000
+#define INA260_CURRENT_REGISTER 0x01
+#define I2C_DELAY 0x10
 /*
                          Main application
  */
@@ -51,7 +67,7 @@ void main(void)
 {
     // Initialize the device
     SYSTEM_Initialize();
-
+    I2C_Master_Init(1000000);      //Initialize I2C Master with 100KHz clock
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global and Peripheral Interrupts
     // Use the following macros to:
@@ -69,9 +85,13 @@ void main(void)
     //INTERRUPT_PeripheralInterruptDisable();
 
     while (1)
-    {
-        float voltage = Adafruit_INA260_readBusVoltage();
-        
+    {;
+       Voltage = Voltage_ReadRegister();
+       Current = Current_ReadRegister();
+       Power = Power_ReadRegister();
+       sprintf(voltage_str, "%.3f",Voltage);
+       sprintf(current_str, "%.2f",Current);
+       sprintf(power_str, "%.2f",Power);
         // Add your application code
     }
 }

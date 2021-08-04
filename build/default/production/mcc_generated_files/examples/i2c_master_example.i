@@ -10,19 +10,19 @@
 # 47 "mcc_generated_files/examples/i2c_master_example.c"
 # 1 "mcc_generated_files/examples/i2c_master_example.h" 1
 # 50 "mcc_generated_files/examples/i2c_master_example.h"
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 1 3
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 127 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 2 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 127 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long uintptr_t;
-# 142 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 142 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long intptr_t;
-# 158 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 158 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef signed char int8_t;
 
 
@@ -45,7 +45,7 @@ typedef long int32_t;
 
 
 typedef long long int64_t;
-# 188 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 188 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long long intmax_t;
 
 
@@ -74,9 +74,9 @@ typedef unsigned long uint32_t;
 
 
 typedef unsigned long long uint64_t;
-# 229 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 229 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long long uintmax_t;
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 2 3
 
 
 typedef int8_t int_fast8_t;
@@ -109,21 +109,21 @@ typedef uint24_t uint_fast24_t;
 typedef uint32_t uint_least32_t;
 
 typedef uint64_t uint_least64_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/stdint.h" 1 3
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/stdint.h" 1 3
 typedef int16_t int_fast16_t;
 typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 2 3
 # 50 "mcc_generated_files/examples/i2c_master_example.h" 2
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 1 3
-# 10 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\features.h" 1 3
-# 10 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 2 3
-# 24 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 1 3
+# 10 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\features.h" 1 3
+# 10 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 2 3
+# 24 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
 
 
 
@@ -135,16 +135,16 @@ typedef void * va_list[1];
 
 
 typedef void * __isoc_va_list[1];
-# 122 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 122 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned size_t;
-# 137 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 137 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long ssize_t;
-# 246 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 246 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long long off_t;
-# 399 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 399 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef struct _IO_FILE FILE;
-# 24 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 2 3
-# 52 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 3
+# 24 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 2 3
+# 52 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 3
 typedef union _G_fpos64_t {
  char __opaque[16];
  double __align;
@@ -265,7 +265,7 @@ char *tempnam(const char *, const char *);
 
 # 1 "mcc_generated_files/examples/../i2c_master.h" 1
 # 56 "mcc_generated_files/examples/../i2c_master.h"
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdbool.h" 1 3
 # 56 "mcc_generated_files/examples/../i2c_master.h" 2
 
 
@@ -279,32 +279,12 @@ typedef enum {
 
 typedef enum
 {
+    I2C_STOP_O,
     I2C_RESTART_READ,
     I2C_RESTART_WRITE,
     I2C_CONTINUE,
     I2C_RESET_LINK
 } i2c_operations_t;
-
-typedef enum {
-    I2C_IDLE = 0,
-    I2C_SEND_ADR_READ,
-    I2C_SEND_ADR_WRITE,
-    I2C_TX,
-    I2C_RX,
-    I2C_RCEN,
-    I2C_TX_EMPTY,
-    I2C_SEND_RESTART_READ,
-    I2C_SEND_RESTART_WRITE,
-    I2C_SEND_RESTART,
-    I2C_SEND_STOP,
-    I2C_RX_ACK,
-    I2C_RX_NACK_STOP,
-    I2C_RX_NACK_RESTART,
-    I2C_RESET,
-    I2C_ADDRESS_NACK,
-
-} i2c_fsm_states_t;
-
 
 typedef uint8_t i2c_address_t;
 typedef i2c_operations_t (*i2c_callback_t)(void *funPtr);
@@ -315,18 +295,17 @@ i2c_operations_t I2C_CallbackReturnReset(void *funPtr);
 i2c_operations_t I2C_CallbackRestartWrite(void *funPtr);
 i2c_operations_t I2C_CallbackRestartRead(void *funPtr);
 
-void BUS_REGISTER(i2c_fsm_states_t i2cdevice, int reg_addr, int witdh, int byteorder);
 
 
 
 
 
 void I2C_Initialize(void);
-# 122 "mcc_generated_files/examples/../i2c_master.h"
+# 101 "mcc_generated_files/examples/../i2c_master.h"
 i2c_error_t I2C_Open(i2c_address_t address);
-# 132 "mcc_generated_files/examples/../i2c_master.h"
+# 111 "mcc_generated_files/examples/../i2c_master.h"
 i2c_error_t I2C_Close(void);
-# 144 "mcc_generated_files/examples/../i2c_master.h"
+# 123 "mcc_generated_files/examples/../i2c_master.h"
 i2c_error_t I2C_MasterOperation(_Bool read);
 
 
@@ -338,20 +317,24 @@ i2c_error_t I2C_MasterWrite(void);
 
 
 i2c_error_t I2C_MasterRead(void);
-# 163 "mcc_generated_files/examples/../i2c_master.h"
+# 142 "mcc_generated_files/examples/../i2c_master.h"
 void I2C_SetTimeout(uint8_t timeOut);
-# 173 "mcc_generated_files/examples/../i2c_master.h"
+# 152 "mcc_generated_files/examples/../i2c_master.h"
 void I2C_SetBuffer(void *buffer, size_t bufferSize);
-# 185 "mcc_generated_files/examples/../i2c_master.h"
+# 164 "mcc_generated_files/examples/../i2c_master.h"
 void I2C_SetDataCompleteCallback(i2c_callback_t cb, void *ptr);
-# 195 "mcc_generated_files/examples/../i2c_master.h"
+# 174 "mcc_generated_files/examples/../i2c_master.h"
 void I2C_SetWriteCollisionCallback(i2c_callback_t cb, void *ptr);
-# 205 "mcc_generated_files/examples/../i2c_master.h"
+# 184 "mcc_generated_files/examples/../i2c_master.h"
 void I2C_SetAddressNackCallback(i2c_callback_t cb, void *ptr);
-# 215 "mcc_generated_files/examples/../i2c_master.h"
+# 194 "mcc_generated_files/examples/../i2c_master.h"
 void I2C_SetDataNackCallback(i2c_callback_t cb, void *ptr);
-# 225 "mcc_generated_files/examples/../i2c_master.h"
+# 204 "mcc_generated_files/examples/../i2c_master.h"
 void I2C_SetTimeoutCallback(i2c_callback_t cb, void *ptr);
+# 213 "mcc_generated_files/examples/../i2c_master.h"
+void (*MSSP_InterruptHandler)(void);
+# 222 "mcc_generated_files/examples/../i2c_master.h"
+void I2C_SetInterruptHandler(void (* InterruptHandler)(void));
 # 52 "mcc_generated_files/examples/i2c_master_example.h" 2
 
 
@@ -433,7 +416,7 @@ void I2C_WriteNBytes(i2c_address_t address, uint8_t* data, size_t len)
     I2C_SetBuffer(data,len);
     I2C_SetAddressNackCallback(((void*)0),((void*)0));
     I2C_MasterWrite();
-    while(I2C_BUSY == I2C_Close());
+
 }
 
 void I2C_ReadNBytes(i2c_address_t address, uint8_t *data, size_t len)

@@ -1,15 +1,23 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"133 ./Adafruit_INA260.h
-[; ;./Adafruit_INA260.h: 133:   INA260_MeasurementMode Adafruit_INA260_getMode;
-[c E12616 0 3 7 .. ]
-[n E12616 _mode INA260_MODE_SHUTDOWN INA260_MODE_TRIGGERED INA260_MODE_CONTINUOUS  ]
+[v F12594 `(v ~T0 @X0 0 tf ]
 [p mainexit ]
-"70 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 70: void SYSTEM_Initialize(void);
+"72 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"130 ./Adafruit_INA260.h
-[; ;./Adafruit_INA260.h: 130:   float Adafruit_INA260_readBusVoltage(void);
-[v _Adafruit_INA260_readBusVoltage `(f ~T0 @X0 0 ef ]
+"42 ./INA260.h
+[; ;./INA260.h: 42: void I2C_Master_Init(const unsigned long c);
+[v _I2C_Master_Init `(v ~T0 @X0 0 ef1`Cul ]
+"37
+[; ;./INA260.h: 37: float Voltage_ReadRegister(void);
+[v _Voltage_ReadRegister `(f ~T0 @X0 0 ef ]
+"38
+[; ;./INA260.h: 38: float Current_ReadRegister(void);
+[v _Current_ReadRegister `(f ~T0 @X0 0 ef ]
+"39
+[; ;./INA260.h: 39: float Power_ReadRegister(void);
+[v _Power_ReadRegister `(f ~T0 @X0 0 ef ]
+"113 C:\Program Files\Microchip\xc8\v2.31\pic\include\c99\stdio.h
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
 "54 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f26k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f26k80.h: 54: __asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
@@ -1384,44 +1392,76 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37211
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f26k80.h: 37211: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"126 ./Adafruit_INA260.h
-[; ;./Adafruit_INA260.h: 126: int i2c_address = 0x40;
-[v _i2c_address `i ~T0 @X0 1 e ]
-[i _i2c_address
--> 64 `i
-]
-"133
-[; ;./Adafruit_INA260.h: 133:   INA260_MeasurementMode Adafruit_INA260_getMode;
-[v _Adafruit_INA260_getMode `E12616 ~T0 @X0 1 e ]
-[v $root$_main `(v ~T0 @X0 0 e ]
+"213 ./mcc_generated_files/drivers/.././i2c_master.h
+[v _MSSP_InterruptHandler `*F12594 ~T0 @X0 1 e ]
 "50 main.c
-[; ;main.c: 50: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
+[; ;main.c: 50: char voltage_str[4];
+[v _voltage_str `uc ~T0 @X0 -> 4 `i e ]
 "51
-[; ;main.c: 51: {
+[; ;main.c: 51: char current_str[4];
+[v _current_str `uc ~T0 @X0 -> 4 `i e ]
+"52
+[; ;main.c: 52: char power_str[4];
+[v _power_str `uc ~T0 @X0 -> 4 `i e ]
+"53
+[; ;main.c: 53: float Voltage;
+[v _Voltage `f ~T0 @X0 1 e ]
+"54
+[; ;main.c: 54: float Current;
+[v _Current `f ~T0 @X0 1 e ]
+"55
+[; ;main.c: 55: float Power;
+[v _Power `f ~T0 @X0 1 e ]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"66
+[; ;main.c: 66: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"67
+[; ;main.c: 67: {
 {
 [e :U _main ]
 [f ]
-"53
-[; ;main.c: 53:     SYSTEM_Initialize();
+"69
+[; ;main.c: 69:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"71
-[; ;main.c: 71:     while (1)
+"70
+[; ;main.c: 70:     I2C_Master_Init(1000000);
+[e ( _I2C_Master_Init (1 -> -> 1000000 `l `ul ]
+"87
+[; ;main.c: 87:     while (1)
 [e :U 1530 ]
-"72
-[; ;main.c: 72:     {
+"88
+[; ;main.c: 88:     {;
 {
-"73
-[; ;main.c: 73:         float voltage = Adafruit_INA260_readBusVoltage();
-[v _voltage `f ~T0 @X0 1 a ]
-[e = _voltage ( _Adafruit_INA260_readBusVoltage ..  ]
-"76
-[; ;main.c: 76:     }
+"89
+[; ;main.c: 89:        Voltage = Voltage_ReadRegister();
+[e = _Voltage ( _Voltage_ReadRegister ..  ]
+"90
+[; ;main.c: 90:        Current = Current_ReadRegister();
+[e = _Current ( _Current_ReadRegister ..  ]
+"91
+[; ;main.c: 91:        Power = Power_ReadRegister();
+[e = _Power ( _Power_ReadRegister ..  ]
+"92
+[; ;main.c: 92:        sprintf(voltage_str, "%.3f",Voltage);
+[e ( _sprintf (1 , (. , &U _voltage_str :s 1C -> _Voltage `d ]
+"93
+[; ;main.c: 93:        sprintf(current_str, "%.2f",Current);
+[e ( _sprintf (1 , (. , &U _current_str :s 2C -> _Current `d ]
+"94
+[; ;main.c: 94:        sprintf(power_str, "%.2f",Power);
+[e ( _sprintf (1 , (. , &U _power_str :s 3C -> _Power `d ]
+"96
+[; ;main.c: 96:     }
 }
 [e :U 1529 ]
 [e $U 1530  ]
 [e :U 1531 ]
-"77
-[; ;main.c: 77: }
+"97
+[; ;main.c: 97: }
 [e :UE 1528 ]
 }
+[p f _sprintf 8462336 ]
+[a 1C 37 46 51 102 0 ]
+[a 2C 37 46 50 102 0 ]
+[a 3C 37 46 50 102 0 ]
